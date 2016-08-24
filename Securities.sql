@@ -1,0 +1,21 @@
+USE [dbOne]
+GO
+
+/****** Object:  Table [dbo].[Securities]    Script Date: 24/08/2016 12:16:54 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Securities](
+	[Ticker] [nchar](10) NOT NULL,
+	[Name] [nvarchar](50) NOT NULL,
+ CONSTRAINT [PK__Securiti__42AC12F15B127A46] PRIMARY KEY CLUSTERED 
+(
+	[Ticker] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
+
+GO
+
